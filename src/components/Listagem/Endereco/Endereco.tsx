@@ -1,6 +1,21 @@
 import { type JSX } from "react";
 import './Endereco.css';
 
+interface Endereco {
+    cep: string
+    state: string
+    city: string
+    neighborhood: string
+    street: string
+    location: {
+        type: string
+        coordinates: {
+            longitude: string
+            latitude: string
+        }
+    }
+}
+
 function Endereco(): JSX.Element {
     return (
         <section className="endereco">
