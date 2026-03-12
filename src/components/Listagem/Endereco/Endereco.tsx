@@ -5,13 +5,13 @@ interface Endereco {
     cep: string
     state: string
     city: string
-    neighborhood: string
-    street: string
+    neighborhood: string | null
+    street: string | null
     location: {
         type: string
         coordinates: {
-            longitude: string
-            latitude: string
+            longitude: string | null
+            latitude: string | null
         }
     }
 }
